@@ -10,7 +10,7 @@ namespace PusulaTalent
 {
     public class MaxIncreasingSubArrayAsJson
     {
-        public static string Calculate(List<int> numbers)
+        public static string MaxIncreasingSubArrayAsJson(List<int> numbers)
         {
             //liste boş mu
             if (numbers == null || numbers.Count == 0)
