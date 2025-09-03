@@ -6,10 +6,6 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace PusulaTalent
-{
-    public class MaxIncreasingSubArrayAsJson
-    {
         public static string MaxIncreasingSubArrayAsJson(List<int> numbers)
         {
             //liste boş mu
@@ -25,7 +21,6 @@ namespace PusulaTalent
 
             //artan dizinin nasıl bulacağımızın hesabı
             //toplamların karşılaştırılması
-
             List<int> maxArray = new List<int>();
             List<int> currentArray = new List<int>();
 
@@ -57,5 +52,3 @@ namespace PusulaTalent
 
             return JsonSerializer.Serialize(maxArray);
         }
-    }
-}
