@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,21 +6,21 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-        public static string MaxIncreasingSubArrayAsJson(List<int> numbers)
+namespace PusulaTalent
+{
+    public class FirstQuestion
+    {
+        public static string Calculate(List<int> numbers)
         {
             //liste boş mu
             if (numbers == null || numbers.Count == 0)
             {
                 return JsonSerializer.Serialize(new List<int>());
             }
-            //liste tek elemanlı mı
-            else if (numbers.Count == 1)
-            {
-                return JsonSerializer.Serialize(numbers);
-            }
 
             //artan dizinin nasıl bulacağımızın hesabı
             //toplamların karşılaştırılması
+
             List<int> maxArray = new List<int>();
             List<int> currentArray = new List<int>();
 
@@ -52,3 +52,5 @@ using System.Threading.Tasks;
 
             return JsonSerializer.Serialize(maxArray);
         }
+    }
+}
