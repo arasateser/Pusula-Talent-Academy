@@ -34,7 +34,7 @@ namespace PusulaTalent
             }
 
             var names = filteredEmployees.OrderByDescending(n => n.Name.Length).ThenBy(n => n.Name).Select(n => n.Name);
-            //json döndür- İsimleri uzunluklarına göre azalan, ardından alfabetik olarak sıralayın
+            //json döndür
 
             var result = new
             {
@@ -51,3 +51,4 @@ namespace PusulaTalent
         }
     }
 }
+
